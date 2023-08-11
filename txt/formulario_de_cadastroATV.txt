@@ -1,0 +1,8 @@
+Descrição:
+Para poder iniciar o cadastro, o usuário deverá fornecer alguns dados para a aplicação como e-mail, número de telefone, cpf e senha.
+
+Após isso, a aplicação deve armazenar essas informações em um banco de dados para assim criar um perfil para o usuário.
+
+
+Utilizando os métodos:
+A aplicação utilizaria o POST para solicitar os dados do cadastro do usuário, como o e-mail, número de telefone, etc. Após isso, a aplicação irá utilizar o GET para pegar as informações já cadastradas no banco de dados por meio do POST e assim criar o perfil do usuário.

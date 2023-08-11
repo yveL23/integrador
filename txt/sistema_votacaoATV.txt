@@ -1,0 +1,10 @@
+Descrição:
+Para um sistema de votação web o usuário deverá criar um perfil na aplicação para poder ter acesso a votação de fato. Ele deverá fornecer alguns dados para que o cadastro na aplicação seja realizado, como o e-mail, cpf, número de telefone, e uma senha.
+
+após essa etapa, a aplicação armazenará essas informações em um banco de dados e permitirá que o usuário possa votar.
+
+
+Utilizando os métodos:
+A aplicação vai usar o POST para solicitar as informações do usuário por meio de um formulário. Após isso, a aplicação utilizará o GET para solicitar as informações armazenadas do POST para assim poder criar um perfil para o usuário.
+
+Terminado o cadastro, a aplicação ira fornecer um novo POST para que o usuário informe o seu voto e uitlizará um GET para solicitar esse voto e jogar na aplicação.
