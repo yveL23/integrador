@@ -5,7 +5,7 @@ const mysql2 = require("mysql2");
 module.exports = {
     dialect: "mysql",
     host: "localhost",
-    username: "aluno_medio",
+    username: "root",
     password: "@lunoSenai23.",
     database: "integrador",
     define: {

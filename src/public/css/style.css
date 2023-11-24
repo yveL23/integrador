@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+div + div {
+    clear: both;
+}
+
+p {
+    line-height: 1.4em;
+    color: #9e9e9e;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(286deg, #9D324F 0%, #D25935 100%);    
+}
+
+footer{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.ft-desc{
+    width: 150px;
+    height: 150px;
+}
+
+.desc{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.bars{
+    width: 40px;
+    height: 40px;
+}
+
+.faq-body {
+    border-radius: 0.2em;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: -45px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: -10px;
+    background-color: #ffffff;
+    box-shadow: 60px -16px rgb(17, 17, 17);
+    
+}
+
+.nav-tittle{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-right: 10rem;
+    color: #999999;
+}
+
+.faq-title {
+    font-size: 2em;
+    margin: 0.4em 0;
+}
+
+div.separator {
+    width: 12.5em;
+    background-color: #e31b1b;
+    height: 0.17em;
+    margin-left: -1.8em;
+}
+
+.faq-list > div {
+    border-bottom: 0.07em solid #ededed;
+    padding: 1.5em 0em;
+} 
+
+.faq-list > div:last-child {
+    border: unset;
+}
+
+details > summary {
+    list-style: none;
+}
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+summary {
+    font-size: 1.4em;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+summary:hover {
+    color: #e31b1b;
+}
+
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 55px}
+}
+
+details[open] summary {
+    color: #e31b1b;
+}
+
+details[open] p {
+    border-left: 2px solid #e31b1b;
+    margin-left: 55px;
+    padding-left: 25px;
+    opacity: 100;
+    transition: all 3s ease;
+}
+
+details[open] summary:after {
+    content: "-";
+    font-size: 3.2em;
+    margin: -33px 0.35em 0 0;
+    font-weight: 200;
+}
+
+
+
+.faq-list {
+    width: 55em;
+    margin: 1em ;
+    padding: 2em ;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary:after {
+    background: transparent;
+    border-radius: 0.3em;
+    content: "+";
+    color: #e31b1b;
+    float: left;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: -0.3em 0.65em 0 0;
+    padding: 0;
+    text-align: center;
+    width: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-tittle {
+        padding-top: 10px;
+        padding-right: 0;
+    }
+
+    .bars {
+        order: 1;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .faq-list {
+        width: 90%;
+        margin: 1em auto;
+    }
+
+    .faq-body {
+        margin-top: -20px; /* Ajuste para melhor visualização */
+    }
+
+    details[open] p {
+        margin-left: 0;
+        padding-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .faq-list > div {
+        padding: 1em;
+    }
+
+    .faq-content {
+        font-size: 14px;
+    }
+
+    details[open] {
+        background-color: #f5f5f5;
+    }
+
+    details[open] summary:after {
+        content: "+";
+    }
+}
+
+
+/*          FOOTER               */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.3rem;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+  }
+

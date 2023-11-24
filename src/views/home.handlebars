@@ -1,0 +1,88 @@
+
+<body>
+    <header>
+        <div class="navbar">
+            <img src="/assets/img/acsiv-nav.svg" alt="">
+            <h1 class="nav-tittle">Dúvidas Frequentes</h1>
+            <img  class="bars" src="/assets/img/bars.png" alt="">
+        </div>
+    </header>
+    <main>
+        <div id="faq" class="faq-body">
+        <div class="faq-header">
+            <h3 class="faq-title">Dúvidas Frequentes</h3>
+            <div class="separator"></div>
+        </div>
+        <div class="faq-list">
+            <div>
+                <details class="faq1">
+                <summary title="Certidão de nascimento e regularização de CPF:">Certidão de nascimento e regularização de CPF:</summary>
+                <div class="desc">
+                    <img class="ft-desc" src="/assets/img/ft1.png" alt="">
+                    <p class="faq-content">O processo para regularização do Cadastro de Pessoa Física (CPF) varia muito de acordo com cada situação. Na internet, por exemplo, ela só pode ser realizada caso seja para complementar informações que não constam na base de dados. Além disso, também é possível regularizar a situação do CPF quando houve atraso na entrega de declarações de pessoas físicas.</p>
+                </div>
+                </details>
+                </div>
+            <div>
+                <details class="faq2">
+                <summary title="Como regularizar seu CPF?">Como regularizar seu CPF?</summary>
+                <div class="desc">
+                    <p class="faq-content">A Receita Federal conta com um formulário eletrônico para que o interessado realize a alteração de dados cadastrais no CPF. Entretanto, para que isso ocorra é necessário informar o título de eleitor. Caso não seja possível realizar de forma eletrônica, o interessado deve comparecer a uma das Unidades de Atendimento ao Contribuinte.</p>
+                    <img class="ft-desc" src="/assets/img/ft2.png" alt="">
+                </div>
+                </details>
+                </div>
+            <div>
+                <details class="faq3">
+                <summary title="O que é relação estável?">O que é relação estável?</summary>
+                <div class="desc">
+                    <img class="ft-desc" src="/assets/img/ft3.png" alt="">
+                    <p class="faq-content">Há quem acredite que uma relação estável é quando há compromisso entre o casal. Já outras pessoas consideram a relação estável somente quando ocorre algum tipo de acordo jurídico envolvendo ambas as partes, a fim de validar esse relacionamento. Este é o caso da união estável, contrato firmado entre duas pessoas que vivem em relação de convivência duradoura .</p>
+                </div>
+                </details>
+                </div>
+            <div>
+                <details class="faq4">
+                <summary title="Que história é essa de dupla cidadania?">Que história é essa de dupla cidadania?</summary>
+                <div class="desc">
+                    <p class="faq-content">A dupla cidadania ocorre quando um indivíduo é portador de duas nacionalidades simultaneamente. Neste caso, a história da dupla cidadania não tem um início específico, pois até mesmo o título de “dupla cidadania” não é independente.</p>
+                    <img class="ft-desc" src="/assets/img/ft4.png" alt="">
+                </div>
+                </details>
+                </div>
+            <div>
+                <details class="faq5">
+                <summary title="Que certidão precisa de passaporte?">Que certidão precisa de passaporte?</summary>
+                <div class="desc">
+                    <img class="ft-desc" src="/assets/img/ft5.png" alt="">
+                    <p class="faq-content">Para conhecer destinos fora do país é necessário tirar o passaporte, documento emitido pela Polícia Federal. O interessado em solicitar a emissão do passaporte precisa comparecer ao posto de atendimento da Polícia, no mínimo, duas vezes, sendo a primeira para tirar as digitais e fazer a foto e a outra para receber o documento.</p>
+                </div>
+                </details>
+                </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">&copy;
+            <span id="year">2023 </span>
+            <span> Active Sistemas. Todos direitos reservados.</span>
+        </div>
+    </footer>
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const detailsElements = document.querySelectorAll('details');
+
+        detailsElements.forEach(function (details) {
+            details.addEventListener('click', function () {
+                // Fecha todos os detalhes, exceto o atual
+                detailsElements.forEach(function (otherDetails) {
+                    if (otherDetails !== details) {
+                        otherDetails.removeAttribute('open');
+                    }
+                });
+            });
+        });
+    });
+</script>

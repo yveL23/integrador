@@ -1,8 +1,8 @@
 const express = require("express");
+const app = express();
+const handlebars = require("express-handlebars");
 
 const dotenv = require("dotenv");
-const handlebars = require("express-handlebars");
-const app = express();
 const postRoutes = require("./routes/postRoutes");
 const path = require("path");
 
@@ -18,8 +18,10 @@ app.set("views", path.join(__dirname, "views/"));
 app.use(express.json());
 app.use(express.static(__dirname + '/public'));
 
+app.use(express.static(path.join(__dirname, '/public')))
+
 handlebars.create({
-    partialsDir: path.join(__dirname, "views/parials")
+    partialsDir: path.join(__dirname, "views/partials")
 });
 
 app.use(postRoutes);
